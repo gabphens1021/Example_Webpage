@@ -24,7 +24,7 @@ pipeline {
         stage('Build'){
 
             environment {
-                DOCKER_CRED = credentials('Dawei-Dockerhub')
+                DOCKER_CRED = credentials('Kehinde-Dockerhub')
                 }
             
             steps{
@@ -39,7 +39,7 @@ pipeline {
             environment {
                 STAGING_INSTANCE_IP = credentials('STAGING_INSTANCE_IP')
                 PROD_INSTANCE_IP = credentials('PROD_INSTANCE_IP')
-                DOCKER_CRED = credentials('Dawei-Dockerhub')
+                DOCKER_CRED = credentials('Kehinde-Dockerhub')
                 }
             steps{
                 script{
